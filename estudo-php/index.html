@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Notas de Aulas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Nota de Aula</h1>
+        <form action="" method="post">
+          <h2>Selecione o ramo da física estudado:</h2>
+          <div class="box-questions">
+            <select name="ramo" id="ramo" class="questions" required>
+              <option value="">(Selecione uma opção)</option>
+              <option value="mecanica">Mecânica</option>
+              <option value="termologia">Termologia</option>
+              <option value="Ondulatoria">Ondulatória</option>
+              <option value="acustica">Acústica</option>
+              <option value="optica">Óptica Geométrica</option>
+              <option value="eletricidade">Eletricidade</option>
+              <option value="eletromagnetismo">Eletromagnetismo</option>
+              <option value="fisica-moderna">Física Moderna</option>
+            </select>
+          </div>
+          <h2>Data da aula:</h2>
+          <div class="box-questions">
+            <input type="date" class="questions" required />
+          </div>
+          <h2>Observações:</h2>
+          <div class="area">
+            <textarea
+              name=""
+              id=""
+              cols="28"
+              rows="7"
+              placeholder="Coloque algo aqui..." class="questions"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" value="Salvar" class="questions"/>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
